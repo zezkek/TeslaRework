@@ -12,7 +12,7 @@ namespace TeslaRework
     {
         public override string Name { get; } = "TeslaRework";
         public override string Author { get; } = ".fkn_goose";
-        public override Version Version => new Version(1, 0, 0);
+        public override Version Version => new Version(1, 0, 1);
         public static readonly Lazy<Plugin> LazyInstance = new Lazy<Plugin>(valueFactory: () => new Plugin());
         public static Plugin PluginItem => LazyInstance.Value;
         private Handlers handlers;
