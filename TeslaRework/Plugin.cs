@@ -6,13 +6,13 @@ using System.Text;
 using System.Threading.Tasks;
 using PlayerEv = Exiled.Events.Handlers.Player;
 
-namespace MoreToolsExiled
+namespace TeslaRework
 {
     public class Plugin:Plugin<Config>
     {
-        public override string Name { get; } = "MoreTools";
+        public override string Name { get; } = "TeslaRework";
         public override string Author { get; } = ".fkn_goose";
-        public override Version Version => new Version(0, 0, 1);
+        public override Version Version => new Version(1, 0, 0);
         public static readonly Lazy<Plugin> LazyInstance = new Lazy<Plugin>(valueFactory: () => new Plugin());
         public static Plugin PluginItem => LazyInstance.Value;
         private Handlers handlers;
